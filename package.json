@@ -1,0 +1,37 @@
+{
+  "name": "cypress-automation-tests-framework",
+  "version": "1.0.0",
+  "description": "Automation Test Framework",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:electron": "cypress run --browser electron",
+    "cy:update-snapshots": "cypress run --env updateSnapshots=true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnatolyVasilev/cypress-automation-test-framework.git"
+  },
+  "keywords": [
+    "test",
+    "automation",
+    "framework",
+    "cypress"
+  ],
+  "author": "Anatolii Vasilev <anatolii.s.vasilev@gmail.com> (https://github.com/AnatolyVasilev)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnatolyVasilev/cypress-automation-test-framework/issues"
+  },
+  "homepage": "https://github.com/AnatolyVasilev/cypress-automation-test-framework#readme",
+  "dependencies": {
+    "cypress": "^8.7.0",
+    "cypress-cucumber-preprocessor": "^4.3.0",
+    "cypress-image-snapshot": "^4.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
